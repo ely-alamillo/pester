@@ -46,8 +46,8 @@ export default async (req: NextApiRequestWithPackage, res: NextApiResponse) => {
           },
         ],
         mode: 'payment',
-        success_url: `http://localhost:300/result?session_id={CHECKOUT_SESSION_ID}`,
-        cancel_url: `http://localhost:300/donate-with-checkout`,
+        success_url: `http://localhost:3000/result?session_id={CHECKOUT_SESSION_ID}`,
+        cancel_url: `http://localhost:3000/donate-with-checkout`,
         metadata: {
           packageTier
         }
